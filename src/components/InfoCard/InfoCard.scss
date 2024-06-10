@@ -9,7 +9,8 @@
   border-radius: $radius-1;
   display: flex;
   flex-direction: column;
-  gap: 1.656rem;
+  justify-content: space-between;
+
   &__logo {
     height: 42.96px;
     width: 42.96px;
@@ -25,4 +26,16 @@
   &__text {
     @include info-card-text;
   }
+  &__change-amount {
+    @include info-card-text;
+    color: var(--change-highlight);
+  }
+}
+
+[data-direction="up"] {
+  --change-highlight: #2fe1b9;
+}
+
+[data-direction="down"] {
+  --change-highlight: #f84874;
 }

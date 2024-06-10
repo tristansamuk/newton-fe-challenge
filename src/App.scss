@@ -5,20 +5,20 @@
   height: 100vh;
   max-width: 74%;
   margin: 3rem auto;
-  border: 1px solid #2a2c4e;
 }
 
 .hero {
   display: flex;
-  height: 14.875rem;
+  // height: 14.875rem;
+  height: fit-content;
   &__container {
     width: 50%;
     display: flex;
-    border: 1px solid #2a2c4e;
+
     &--left {
       @extend .hero__container;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
     }
     &--right {

@@ -16,7 +16,10 @@ const InfoCard = ({ logo, logo_alt, coin, direction, change }: Props) => {
         <h3 className="info-card__text">{coin}</h3>
         <div className="info-card__container-change">
           {/* conditional render up or down icon here */}
-          <h3 className="info-card__text">{`${change}%`}</h3>
+          <h3
+            data-direction={direction}
+            className="info-card__change-amount"
+          >{`${change}%`}</h3>
         </div>
       </div>
     </div>
