@@ -1,8 +1,28 @@
+@use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
 
 .info-card {
+  width: 9.375rem;
+  height: 10.687rem;
+  background-color: $purple-800;
+  padding: 1.342rem;
+  border-radius: $radius-1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.656rem;
   &__logo {
     height: 42.96px;
     width: 42.96px;
+  }
+  &__container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__container-change {
+    display: flex;
+  }
+  &__text {
+    @include info-card-text;
   }
 }

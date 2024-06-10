@@ -4,7 +4,6 @@ import "./styles/global.scss";
 import cardData from "./data/info-cards.json";
 
 function App() {
-  console.log(cardData);
   return (
     <div className="wrapper">
       <section className="hero">

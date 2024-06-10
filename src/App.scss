@@ -10,6 +10,7 @@
 
 .hero {
   display: flex;
+  height: 14.875rem;
   &__container {
     width: 50%;
     display: flex;
@@ -22,8 +23,9 @@
     }
     &--right {
       @extend .hero__container;
-      justify-content: flex-end;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 1rem;
     }
   }
   &__heading-1 {

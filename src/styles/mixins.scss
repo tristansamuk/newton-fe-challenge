@@ -4,13 +4,20 @@
 
 @mixin hero-heading-1 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   color: $white;
 }
 @mixin hero-heading-2 {
   font-weight: 700;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 1.312rem;
+  line-height: 1.5rem;
   color: $neutral-400;
+}
+
+@mixin info-card-text {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.678rem;
+  color: $white;
 }
