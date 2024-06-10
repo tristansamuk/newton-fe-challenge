@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "logo": "src/assets/coin-logos/BTC-logo.png",
+    "coin": "Bitcoin",
+    "symbol": "BTC",
+    "fiat_symbol": "CAD",
+    "operator": "+",
+    "24h_change": 13.62,
+    "live_price": 37614.92,
+    "sell_price": 37614.92,
+    "buy_price": 37614.92
+  },
+  {
+    "id": 2,
+    "logo": "src/assets/coin-logos/ETH-logo.png",
+    "coin": "Ethereum",
+    "symbol": "BTC",
+    "fiat_symbol": "CAD",
+    "operator": "+",
+    "24h_change": 13.62,
+    "live_price": 37614.92,
+    "sell_price": 37614.92,
+    "buy_price": 37614.92
+  },
+  {
+    "id": 2,
+    "logo": "src/assets/coin-logos/ETH-logo.png",
+    "coin": "Ethereum",
+    "symbol": "BTC",
+    "fiat_symbol": "CAD",
+    "operator": "+",
+    "24h_change": 13.62,
+    "live_price": 2153.23,
+    "sell_price": 2153.23,
+    "buy_price": 2153.23
+  },
+  {
+    "id": 3,
+    "logo": "src/assets/coin-logos/SOL-logo.png",
+    "coin": "Solana",
+    "symbol": "SOL",
+    "fiat_symbol": "CAD",
+    "operator": "-",
+    "24h_change": 8.23,
+    "live_price": 42.32,
+    "sell_price": 42.32,
+    "buy_price": 42.32
+  },
+  {
+    "id": 4,
+    "logo": "src/assets/coin-logos/ADA-logo.png",
+    "coin": "Cardano",
+    "symbol": "ADA",
+    "fiat_symbol": "CAD",
+    "operator": "+",
+    "24h_change": 13.62,
+    "live_price": 0.606203,
+    "sell_price": 0.606203,
+    "buy_price": 0.606203
+  },
+  {
+    "id": 5,
+    "logo": "src/assets/coin-logos/DOT-logo.png",
+    "coin": "Polkadot",
+    "symbol": "DOT",
+    "fiat_symbol": "CAD",
+    "operator": "-",
+    "24h_change": 8.23,
+    "live_price": 9.79,
+    "sell_price": 9.79,
+    "buy_price": 9.79
+  },
+  {
+    "id": 6,
+    "logo": "src/assets/coin-logos/MATIC-logo.png",
+    "coin": "Polygon",
+    "symbol": "MATIC",
+    "fiat_symbol": "CAD",
+    "operator": "+",
+    "24h_change": 13.62,
+    "live_price": 1.18,
+    "sell_price": 1.18,
+    "buy_price": 1.18
+  },
+  {
+    "id": 7,
+    "logo": "src/assets/coin-logos/DOGE-logo.png",
+    "coin": "Dogecoin",
+    "symbol": "DOGE",
+    "fiat_symbol": "CAD",
+    "operator": "+",
+    "24h_change": 13.62,
+    "live_price": 0.606203,
+    "sell_price": 0.606203,
+    "buy_price": 0.606203
+  }
+]
