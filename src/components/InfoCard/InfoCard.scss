@@ -22,9 +22,15 @@
   }
   &__container-change {
     display: flex;
+    align-items: center;
+    gap: 10px;
   }
   &__text {
     @include info-card-text;
+  }
+  &__arrow {
+    height: 6.71px;
+    width: 9.4px;
   }
   &__change-amount {
     @include info-card-text;

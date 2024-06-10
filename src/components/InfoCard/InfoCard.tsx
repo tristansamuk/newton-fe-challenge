@@ -1,3 +1,5 @@
+import arrowUp from "../../assets/icons/arrow-up.png";
+import arrowDown from "../../assets/icons/arrow-down.png";
 import "./InfoCard.scss";
 
 interface Props {
@@ -15,7 +17,19 @@ const InfoCard = ({ logo, logo_alt, coin, direction, change }: Props) => {
       <div className="info-card__container-text">
         <h3 className="info-card__text">{coin}</h3>
         <div className="info-card__container-change">
-          {/* conditional render up or down icon here */}
+          {direction === "up" ? (
+            <img
+              src={arrowUp}
+              className="info-card__arrow"
+              alt="arrow pointing up"
+            />
+          ) : (
+            <img
+              src={arrowDown}
+              className="info-card__arrow"
+              alt="arrow pointing down"
+            />
+          )}
           <h3
             data-direction={direction}
             className="info-card__change-amount"
