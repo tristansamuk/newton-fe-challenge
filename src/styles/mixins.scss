@@ -1,0 +1,16 @@
+@use "./variables.scss" as *;
+
+// Typography
+
+@mixin hero-heading-1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+@mixin hero-heading-2 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: $neutral-400;
+}

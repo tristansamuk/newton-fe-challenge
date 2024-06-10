@@ -1,0 +1,8 @@
+@use "../../styles/variables.scss" as *;
+
+.info-card {
+  &__logo {
+    height: 42.96px;
+    width: 42.96px;
+  }
+}

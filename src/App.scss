@@ -1,0 +1,35 @@
+@use "./styles/variables.scss" as *;
+@use "./styles/mixins.scss" as *;
+
+.wrapper {
+  height: 100vh;
+  max-width: 74%;
+  margin: 3rem auto;
+  border: 1px solid #2a2c4e;
+}
+
+.hero {
+  display: flex;
+  &__container {
+    width: 50%;
+    display: flex;
+    border: 1px solid #2a2c4e;
+    &--left {
+      @extend .hero__container;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &--right {
+      @extend .hero__container;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  &__heading-1 {
+    @include hero-heading-1;
+  }
+  &__heading-2 {
+    @include hero-heading-2;
+  }
+}
