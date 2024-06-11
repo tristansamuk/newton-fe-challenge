@@ -18,6 +18,7 @@ interface Props {
 const CAD = new Intl.NumberFormat("en-CA", {
   style: "currency",
   currency: "CAD",
+  maximumSignificantDigits: 10,
 });
 
 const TableRow = ({ coin }: Props) => {
