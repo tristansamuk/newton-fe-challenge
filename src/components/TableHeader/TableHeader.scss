@@ -1,0 +1,39 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.table-header {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    height: 16px;
+    width: 16px;
+  }
+  &__col-text {
+    @include table-heading;
+  }
+  &__col-1 {
+    @include column;
+    justify-content: flex-start;
+    width: 20%;
+  }
+  &__col-2 {
+    @include column;
+  }
+  &__col-3 {
+    @include column;
+  }
+  &__col-4 {
+    @include column;
+  }
+  &__col-5 {
+    @include column;
+  }
+  &__col-6 {
+    @include column;
+    justify-content: flex-end;
+    width: 15%;
+  }
+}

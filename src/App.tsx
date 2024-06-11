@@ -1,7 +1,8 @@
 import InfoCard from "./components/InfoCard/InfoCard";
+import Table from "./components/Table/Table";
+import cardData from "./data/info-cards.json";
 import "./App.scss";
 import "./styles/global.scss";
-import cardData from "./data/info-cards.json";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           })}
         </div>
       </section>
-      {/* Table componenet here */}
+      <Table />
     </div>
   );
 }

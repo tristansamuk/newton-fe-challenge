@@ -9,12 +9,11 @@
 
 .hero {
   display: flex;
-  // height: 14.875rem;
   height: fit-content;
+  justify-content: space-between;
   &__container {
     width: 50%;
     display: flex;
-
     &--left {
       @extend .hero__container;
       flex-direction: column;
@@ -23,13 +22,15 @@
     }
     &--right {
       @extend .hero__container;
-      justify-content: flex-start;
+      width: fit-content;
+      justify-content: flex-end;
       align-items: flex-end;
       gap: 1rem;
     }
   }
   &__heading-1 {
     @include hero-heading-1;
+    margin-bottom: 0.5rem;
   }
   &__heading-2 {
     @include hero-heading-2;

@@ -1,5 +1,17 @@
 @use "./variables.scss" as *;
 
+// Columns
+
+@mixin column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5px;
+  padding: 0.5rem;
+  border: 1px solid white;
+  width: 15%;
+}
+
 // Typography
 
 @mixin hero-heading-1 {
@@ -20,4 +32,11 @@
   font-size: 1.125rem;
   line-height: 1.678rem;
   color: $white;
+}
+
+@mixin table-heading {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: $neutral-600;
 }
