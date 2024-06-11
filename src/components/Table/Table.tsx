@@ -16,9 +16,11 @@ const Table = () => {
   return (
     <table className="table">
       <TableHeader tableHeadings={tableHeadings} />
-      {/* {tableData.map((coin) => {
-        return <TableRow />;
-      })} */}
+      <tbody>
+        {tableData.map((coin) => {
+          return <TableRow key={coin.id} coin={coin} />;
+        })}
+      </tbody>
     </table>
   );
 };

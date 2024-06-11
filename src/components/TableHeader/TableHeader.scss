@@ -16,11 +16,5 @@
   }
   &__col {
     @include column;
-    &:first-of-type {
-      justify-content: flex-start;
-    }
-    &:last-of-type {
-      justify-content: flex-end;
-    }
   }
 }

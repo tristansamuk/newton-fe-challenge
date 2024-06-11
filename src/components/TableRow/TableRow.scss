@@ -1,6 +1,36 @@
 @use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
 
-.row {
+.table-row {
   display: flex;
+  &__cell {
+    @include cell;
+  }
+  &__data {
+    @include table-data;
+    &--coin {
+      @extend .table-row__data;
+      font-weight: 700;
+    }
+    &--symbols {
+      @extend .table-row__data;
+      color: $neutral-600;
+    }
+  }
+  &__logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+  }
+  &__cointainer {
+    display: flex;
+    position: relative;
+    right: 1.5rem;
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
 }
