@@ -9,9 +9,9 @@ const TableHeader = ({ tableHeadings }: Props) => {
   return (
     <thead>
       <tr className="table-header">
-        {tableHeadings.map((heading) => {
+        {tableHeadings.map((heading, index) => {
           return (
-            <th className="table-header__col">
+            <th key={index} className="table-header__col">
               <img
                 className="table-header__icon"
                 src={sortIcon}
