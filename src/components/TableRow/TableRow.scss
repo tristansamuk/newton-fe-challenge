@@ -18,6 +18,9 @@
       @extend .table-row__data;
       color: $neutral-600;
     }
+    &--change {
+      color: var(--change-highlight);
+    }
   }
   &__logo {
     width: 32px;
@@ -35,4 +38,16 @@
       justify-content: center;
     }
   }
+  &__watch-icon {
+    width: 20px;
+    height: 19.11px;
+  }
+}
+
+[data-operator="+"] {
+  --change-highlight: #2fe1b9;
+}
+
+[data-operator="-"] {
+  --change-highlight: #f84874;
 }

@@ -1,3 +1,4 @@
+import star from "../../assets/icons/star.png";
 import "./TableRow.scss";
 
 interface Props {
@@ -36,9 +37,8 @@ const TableRow = ({ coin }: Props) => {
         </div>
       </td>
       <td className="table-row__cell">
-        <p className="table-row__data">
-          {coin.operator}
-          {coin.change}
+        <p data-operator={coin.operator} className="table-row__data--change">
+          {`${coin.operator}${coin.change}%`}
         </p>
       </td>
       <td className="table-row__cell">
@@ -52,7 +52,7 @@ const TableRow = ({ coin }: Props) => {
       </td>
       {/* Star */}
       <td className="table-row__cell">
-        <p className="table-row__data"></p>
+        <img className="table-row__watch-icon" src={star} alt="watch icon" />
       </td>
     </tr>
   );
