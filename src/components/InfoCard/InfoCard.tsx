@@ -3,21 +3,23 @@ import arrowDown from "../../assets/icons/arrow-down.png";
 import "./InfoCard.scss";
 
 interface Props {
-  logo: string;
-  logo_alt: string;
-  coin: string;
-  direction: string;
-  change: number;
+  coin: {
+    logo: string;
+    logo_alt: string;
+    coin: string;
+    direction: string;
+    change: number;
+  };
 }
 
-const InfoCard = ({ logo, logo_alt, coin, direction, change }: Props) => {
+const InfoCard = ({ coin }: Props) => {
   return (
     <div className="info-card">
-      <img className="info-card__logo" src={logo} alt={logo_alt} />
+      <img className="info-card__logo" src={coin.logo} alt={coin.logo_alt} />
       <div className="info-card__container-text">
-        <h3 className="info-card__text">{coin}</h3>
+        <h3 className="info-card__text">{coin.coin}</h3>
         <div className="info-card__container-change">
-          {direction === "up" ? (
+          {coin.direction === "up" ? (
             <img
               src={arrowUp}
               className="info-card__arrow"
@@ -31,9 +33,9 @@ const InfoCard = ({ logo, logo_alt, coin, direction, change }: Props) => {
             />
           )}
           <h3
-            data-direction={direction}
+            data-direction={coin.direction}
             className="info-card__change-amount"
-          >{`${change}%`}</h3>
+          >{`${coin.change}%`}</h3>
         </div>
       </div>
     </div>

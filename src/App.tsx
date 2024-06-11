@@ -14,16 +14,7 @@ function App() {
         </div>
         <div className="hero__container--right">
           {cardData.map((coin) => {
-            return (
-              <InfoCard
-                key={coin.id}
-                logo={coin.logo}
-                logo_alt={coin.logo_alt}
-                coin={coin.coin}
-                direction={coin.direction}
-                change={coin.change}
-              />
-            );
+            return <InfoCard key={coin.id} coin={coin} />;
           })}
         </div>
       </section>
