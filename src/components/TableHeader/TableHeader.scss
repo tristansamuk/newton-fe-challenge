@@ -14,26 +14,13 @@
   &__col-text {
     @include table-heading;
   }
-  &__col-1 {
+  &__col {
     @include column;
-    justify-content: flex-start;
-    width: 20%;
-  }
-  &__col-2 {
-    @include column;
-  }
-  &__col-3 {
-    @include column;
-  }
-  &__col-4 {
-    @include column;
-  }
-  &__col-5 {
-    @include column;
-  }
-  &__col-6 {
-    @include column;
-    justify-content: flex-end;
-    width: 15%;
+    &:first-of-type {
+      justify-content: flex-start;
+    }
+    &:last-of-type {
+      justify-content: flex-end;
+    }
   }
 }
