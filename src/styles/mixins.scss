@@ -4,7 +4,7 @@
 
 @mixin column {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 2.5px;
   padding: 0.5rem;
@@ -12,26 +12,19 @@
 
   &:first-of-type {
     justify-content: flex-start;
-    flex: 1.5;
-  }
-  &:last-of-type {
-    justify-content: flex-end;
+    flex: 1.25;
   }
 }
 
 @mixin cell {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 0.5rem;
   flex: 1;
-
   &:first-of-type {
     justify-content: flex-start;
-    flex: 1.5;
-  }
-  &:last-of-type {
-    justify-content: flex-end;
+    flex: 1.25;
   }
 }
 

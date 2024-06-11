@@ -3,6 +3,8 @@
 
 .table-row {
   display: flex;
+  border-top: 1px solid $purple-600;
+  height: 4.5625rem;
   &__cell {
     @include cell;
   }
